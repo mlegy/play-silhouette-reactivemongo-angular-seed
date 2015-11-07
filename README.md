@@ -1,18 +1,19 @@
-Play Silhouette Angular Seed Project
-=====================================
+Play Silhouette Reactive Mongo Angular Seed Project
+===================================================
 
-The Play Silhouette Angular Seed project shows how [Silhouette](https://github.com/mohiva/play-silhouette) can be used
+The Play Silhouette Reactive Mongo Angular Seed project shows how [Silhouette](https://github.com/mohiva/play-silhouette) can be used
 to create a SPA with [AngularJS](https://angularjs.org/)/[Satellizer](https://github.com/sahat/satellizer) and Play
-scaffolded by [yeoman](https://github.com/tuplejump/play-yeoman). It's a starting point which can be extended to fit
-your needs.
+scaffolded by [yeoman](https://github.com/tuplejump/play-yeoman) and how you can presisit the users with [MongoDb](https://www.mongodb.org). It's a starting point which can be extended to fit your needs.
+
+This project is a mix of these two projects:
+1. [play-silhouette-angular-seed](https://github.com/mohiva/play-silhouette-angular-seed)
+2. [play-silhouette-reactivemongo-seed](https://github.com/ezzahraoui/play-silhouette-reactivemongo-seed)
 
 ## Example
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 (The "Build App" phase will take a few minutes)
-
-Or you can find a running example of this template under the following URL: https://play-silhouette-angular-seed.herokuapp.com/
 
 ## Features
 
@@ -26,6 +27,7 @@ Or you can find a running example of this template under the following URL: http
 * Remember me functionality
 * [Security headers](https://www.playframework.com/documentation/2.4.x/SecurityHeaders)
 * [CSRF Protection](https://www.playframework.com/documentation/2.4.x/ScalaCsrf)
+* [Fix duplicating the same user multiple times in the db bug](https://github.com/ezzahraoui/play-silhouette-reactivemongo-seed/pull/2).
 
 ## Documentation
 
@@ -33,7 +35,11 @@ Consulate the [Silhouette documentation](http://silhouette.mohiva.com/docs) for 
 
 ## Getting started
 
-1. Make sure u have [Ruby](https://www.ruby-lang.org/de/) and [node.js](http://nodejs.org/) installed.
+1. [Install MONGODB](https://docs.mongodb.org/v3.0/tutorial/#installation)
+   
+   Then create a db called `silhouette`.
+
+2. Make sure u have [Ruby](https://www.ruby-lang.org/de/) and [node.js](http://nodejs.org/) installed.
 
   Then you must install the node packages [yo](http://yeoman.io), [grunt](http://gruntjs.com/) and [bower](http://bower.io/):
 
@@ -52,7 +58,7 @@ Consulate the [Silhouette documentation](http://silhouette.mohiva.com/docs) for 
   ```
   bundle install -j4 --path .bundle
   ```
-2. Configure social providers 
+3. Configure social providers 
   
   To configure the social providers for [Satellizer](https://github.com/sahat/satellizer), Open the file "~\ui\app\scripts\app.js" and input your providers `clientId`: 
   ```
@@ -95,7 +101,7 @@ Consulate the [Silhouette documentation](http://silhouette.mohiva.com/docs) for 
   google.scope="profile email"
   ```
 
-3. Start sbt and run the following:
+4. Start sbt and run the following:
 
   ```
   $ update
@@ -108,10 +114,6 @@ Consulate the [Silhouette documentation](http://silhouette.mohiva.com/docs) for 
 
   $ run
   ```
-
-## Activator
-
-See https://typesafe.com/activator/template/play-silhouette-angular-seed
 
 # License
 
