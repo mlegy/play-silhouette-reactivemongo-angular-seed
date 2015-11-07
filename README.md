@@ -6,6 +6,7 @@ to create a SPA with [AngularJS](https://angularjs.org/)/[Satellizer](https://gi
 scaffolded by [yeoman](https://github.com/tuplejump/play-yeoman) and how you can presisit the users with [MongoDb](https://www.mongodb.org). It's a starting point which can be extended to fit your needs.
 
 This project is a mix of these two projects:
+
 1. [play-silhouette-angular-seed](https://github.com/mohiva/play-silhouette-angular-seed)
 2. [play-silhouette-reactivemongo-seed](https://github.com/ezzahraoui/play-silhouette-reactivemongo-seed)
 
