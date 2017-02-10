@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "1.11.0",
   "net.codingwell" %% "scala-guice" % "4.0.0",
   "net.ceedubs" %% "ficus" % "1.1.2",
-  "com.adrianhurt" %% "play-bootstrap3" % "0.4.4-P24",
+  "com.adrianhurt" %% "play-bootstrap" % "1.0-P24-B3",
   "com.mohiva" %% "play-silhouette-testkit" % "3.0.0" % "test",
   "org.reactivemongo" %% "play2-reactivemongo" % "0.11.5.play24",
   cache,
